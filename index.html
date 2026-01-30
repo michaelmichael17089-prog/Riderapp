@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ride Tracking</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <span class="navbar-brand">🚕 Ride in Progress</span>
+        <span class="badge bg-success">ON THE WAY</span>
+    </div>
+</nav>
+
+<div class="container-fluid p-0">
+    <div class="row g-0">
+
+        <!-- INFO PANEL -->
+        <div class="col-12 col-lg-4 p-3">
+            <div class="card shadow-sm rounded-4">
+                <div class="card-body">
+
+                    <h6 class="text-muted">Destination</h6>
+                    <input id="to" class="form-control mb-3" 
+                           placeholder="Destination" readonly>
+
+                    <hr>
+
+                    <p class="small text-muted mb-1">Status</p>
+                    <p class="fw-semibold text-success">Moving towards destination</p>
+
+                    <button id="mapToggleBtn" class="map-toggle btn btn-primary">
+                        🛰 Satellite
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- MAP -->
+        <div class="col-12 col-lg-8">
+            <div id="map" class="w-100" style="height:100vh;"></div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU8M2YkcR3cKSn5Sgz_GzIVpkzlTz8N5c"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
